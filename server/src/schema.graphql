@@ -1,0 +1,34 @@
+type Query {
+  items: [Item]!
+  feed(offset: Int, limit: Int): [Item!]
+}
+
+type Mutation {
+  signup(email: String!, password: String!): AuthPayload
+  login(email: String!, password: String!): AuthPayload
+}
+
+type Item {
+  id: ID!
+  description: String!
+  url: String!
+}
+
+type AuthPayload {
+  token: String
+  user: User
+}
+
+type User {
+  id: ID!
+  email: String!
+  password: String!
+}
+# input RegisterInput {
+#   email: String!
+#   password: String!
+# }
+# input LoginInput {
+#   email: String!
+#   password: String!
+# }

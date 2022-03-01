@@ -1,0 +1,120 @@
+.contact-form-container {
+  background-color: #1d1d1e;
+  color: #fff;
+  padding: 24px 48px;
+  padding-bottom: 50px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-top: 160px;
+  border-radius: 24px;
+  max-width: 770px;
+  max-height: 358px;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .message {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      margin-bottom: 16px;
+
+      textarea {
+        resize: none;
+      }
+
+      button {
+        width: 100%;
+        justify-self: end;
+        background-color: #60acde;
+        color: #fff;
+        font-weight: medium;
+        border: none;
+        border-radius: 15px;
+        height: 34px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    input[name="name"] {
+      background-image: none !important;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      background-color: inherit;
+      color: #fff;
+      border: none;
+      border-bottom: 2px solid gray;
+      margin-bottom: 16px;
+      padding-left: 4px;
+      line-height: 16px;
+    }
+    input::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    label {
+      font-size: 16px;
+      padding-left: 4px;
+    }
+
+    ::-moz-placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    :-ms-input-placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    ::placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .contact-form-container {
+    margin-right: auto;
+    margin-left: auto;
+    .contact-form {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 16px;
+
+      .message {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+
+        textarea {
+          resize: none;
+        }
+
+        button {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
