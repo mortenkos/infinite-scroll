@@ -2,7 +2,7 @@
 
 App with infinite scrolling view - responsive.
 
-Tech used:
+Tech used:<br />
     1. NodeJs<br />
     2. ApolloServer<br />
     3. ReactJs<br />
