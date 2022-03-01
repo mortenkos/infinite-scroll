@@ -3,14 +3,14 @@
 App with infinite scrolling view - responsive.
 
 Tech used:
-    1. NodeJs
-    2. ApolloServer
-    3. ReactJs
-    4. ApolloClient
-    5. GraphQl
-    6. PostgresSQL
-    7. JWT
-    8. Prisma
+    1. NodeJs<br />
+    2. ApolloServer<br />
+    3. ReactJs<br />
+    4. ApolloClient<br />
+    5. GraphQl<br />
+    6. PostgresSQL<br />
+    7. JWT<br />
+    8. Prisma<br />
 
 ## Functionality
 
@@ -31,9 +31,9 @@ cd into server
 make .env file into server root folder
 example .env file
 
-DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=public"
-APP_SECRET='I-Like-GraphQL'
-PORT=4000
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=public"<br />
+APP_SECRET='I-Like-GraphQL'<br />
+PORT=4000<br />
 
 then:
 
