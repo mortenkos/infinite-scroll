@@ -69,8 +69,8 @@ const Login = () => {
 
   return (
     <div>
-      <h4 className="mv3">{formState.login ? "Login" : "Sign Up"}</h4>
-      <div className="flex flex-column">
+      <h4>{formState.login ? "Login" : "Sign Up"}</h4>
+      <div>
         <input
           value={formState.email}
           onChange={(e) =>
@@ -94,15 +94,13 @@ const Login = () => {
           placeholder="Choose a safe password"
         />
       </div>
-      <div className="flex mt3">
+      <div>
         <button
-          className="pointer mr2 button"
           onClick={formState.login ? login : signup}
         >
           {formState.login ? "login" : "create account"}
         </button>
         <button
-          className="pointer button"
           onClick={(e) =>
             setFormState({
               ...formState,
