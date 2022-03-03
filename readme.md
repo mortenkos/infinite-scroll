@@ -1,4 +1,5 @@
 # Infinite Scroll
+***Ongoing development, missing login page styles!***
 
 App with infinite scrolling view - responsive.
 
